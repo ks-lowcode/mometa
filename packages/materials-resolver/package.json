@@ -15,9 +15,9 @@
     "types"
   ],
   "scripts": {
-    "test": "npx ../../scripts/run.js test",
-    "build": "npx ../../scripts/run.js build",
-    "packlimit": "npx ../../scripts/run.js packlimit",
+    "test": "node ../../scripts/run.js test",
+    "build": "node ../../scripts/run.js build",
+    "packlimit": "node ../../scripts/run.js packlimit",
     "dev": "npm run build -- --watch",
     "prepare": "npm run build",
     "prepublishOnly": "npm run packlimit && ../../scripts/run pkgxo --submit",

@@ -142,6 +142,8 @@ mometa 定位更多是 基于程序员本地开发的模式，新增了可视化
 
 由于 mometa 依赖本地开发环境，只使用在本地开发环境，所以没有搭建在线 demo；在本地开发的时候可以进行使用
 
+node版本: 16.16.0
+
 ```bash
 git clone https://github.com/imcuttle/mometa.git
 cd mometa

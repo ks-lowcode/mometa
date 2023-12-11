@@ -1,4 +1,4 @@
-export = ReactRefreshLoader
+export = ReactRefreshLoader;
 /**
  * A simple Webpack loader to inject react-refresh HMR code into modules.
  *
@@ -9,8 +9,4 @@ export = ReactRefreshLoader
  * @param {*} [meta] The loader metadata passed in.
  * @returns {void}
  */
-declare function ReactRefreshLoader(
-  source: string,
-  inputSourceMap?: import('source-map').RawSourceMap | undefined,
-  meta?: any
-): void
+declare function ReactRefreshLoader(source: string, inputSourceMap?: import("source-map").RawSourceMap | undefined, meta?: any): void;

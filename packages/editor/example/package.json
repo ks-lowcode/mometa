@@ -67,8 +67,9 @@
     "workbox-webpack-plugin": "^6.2.4"
   },
   "scripts": {
-    "node": "cross-env __MOMETA_LOCAL__=true NODE_OPTIONS=\"--loader ts-node/esm -r tsconfig-paths/register\" node",
-    "start": "npm run node scripts/start.js",
+    "node-old": "cross-env __MOMETA_LOCAL__=true NODE_OPTIONS=\"--loader ts-node/esm -r tsconfig-paths/register\" node",
+    "node": "cross-env __MOMETA_LOCAL__=true node",
+    "start": "npm run node-old scripts/start.js",
     "build:runtime": "cross-env DISABLE_COPY_PUBLIC=true GENERATE_SOURCEMAP=false BUILD_MOD=runtime npm run node scripts/build.js",
     "build": "cross-env BUILD_MOD=app npm run node scripts/build.js",
     "test": "node scripts/test.js"

@@ -20,7 +20,7 @@
   "scripts": {
     "test": "cross-env NODE_OPTIONS=--experimental-vm-modules ../../scripts/run.js test",
     "build:app": "cd example && npm run build",
-    "build:lib": "npx ../../scripts/run.js build",
+    "build:lib": "node ../../scripts/run.js build",
     "build:runtime": "cd example && npm run build:runtime",
     "postbuild:runtime": "node ./example/config/post-buildruntime",
     "build": "run-p -l build:*",

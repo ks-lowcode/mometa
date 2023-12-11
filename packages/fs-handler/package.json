@@ -16,7 +16,7 @@
   ],
   "scripts": {
     "test": "npx ../../scripts/run.js test",
-    "build": "npx ../../scripts/run.js build",
+    "build": "node ../../scripts/run.js build",
     "packlimit": "npx ../../scripts/run.js packlimit",
     "dev": "npm run build -- --watch",
     "prepare": "npm run build",
